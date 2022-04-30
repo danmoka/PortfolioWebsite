@@ -1,4 +1,4 @@
-import Me from "../../img/me-unDraw.svg"
+import Me from "../../img/me-unDraw2.svg"
 import MouseSvg from "../common/MouseSvg"
 import "./intro.css"
 
