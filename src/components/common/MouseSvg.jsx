@@ -1,4 +1,4 @@
-const MouseSvg = ({ className }) => (
+const MouseSvg = ({ className = "m-svg" }) => (
     <svg
         width="75"
         height="75"
