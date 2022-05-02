@@ -19,9 +19,8 @@ const Intro = () => {
                         </div>
                     </div>
                     <p className="i-desc">
-                        Result-oriented Full-Stack Software Development Engineer 
-                        with more than 3 years of professional experience in web and desktop software development 
-                        and maintenance with a focus on JavaScript/TypeScript and C#.
+                        Lorem ipsum dolor sit amet. 
+                        Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
                     </p>
                 </div>
                 <MouseSvg className="i-scroll"/>
