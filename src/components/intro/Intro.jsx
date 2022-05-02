@@ -18,11 +18,11 @@ const Intro = () => {
                             <div className="i-title-item">Photographer</div>
                         </div>
                     </div>
-                    <div className="i-desc">
+                    <p className="i-desc">
                         Result-oriented Full-Stack Software Development Engineer 
                         with more than 3 years of professional experience in web and desktop software development 
                         and maintenance with a focus on JavaScript/TypeScript and C#.
-                    </div>
+                    </p>
                 </div>
                 <MouseSvg className="i-scroll"/>
             </div>

@@ -45,6 +45,7 @@
     animation: move 10s ease-in-out infinite alternate;
 }
 
+/* animation */
 @keyframes move {
     25%{
         transform: translateY(-50px);
@@ -73,6 +74,7 @@
 
 }
 
+/* shapes and absolute */
 .i-bg {
     width: 100%;
     height: 100%;
@@ -91,6 +93,7 @@
     transition: all 0.3s ease;
 }
 
+/* hover animation */
 .i-scroll:hover {
     height: 40px;
     width: 40px;
