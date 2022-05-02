@@ -15,4 +15,10 @@ export const products = [
         id: 3,
         src: TeamsPowerBI,
       },
-]
+];
+
+export const contactInfo = {
+  serviceId: "service_68bjjhh",
+  templateId: "template_25b1rkg",
+  publicKey: "akPLKdzFg3kqIvfXA",
+};
