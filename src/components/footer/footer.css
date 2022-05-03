@@ -1,0 +1,49 @@
+.f {
+    display: flex;
+    height: 10vh;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    border: none;
+    border-bottom: 20px solid #262626;
+}
+
+.f-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f-left-wrapper {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.f-right-wrapper {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.f-image {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+a {
+    color: #b00d23;
+    text-decoration: none;
+    text-transform: uppercase;
+}

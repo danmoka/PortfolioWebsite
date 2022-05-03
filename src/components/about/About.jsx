@@ -35,17 +35,6 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="a-award">
-                    <img src={Award} alt="" className="a-award-img"/>
-                    <div className="a-award-texts">
-                        <h4 className="a-award-title">Lorem ipsum dolor sit amet awards 2022</h4>
-                        <p className="a-award-desc">
-                        Lorem ipsum dolor sit amet. 
-                        Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur. 
-                        Et enim reprehenderit At fuga necessitatibus qui quia iure eum veritatis autem non cumque illo rem earum minima.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import { contactInfo } from "../../data";
 import Email from "../../img/email.png";
 import Phone from "../../img/phone.png";
 import LinkedIn from "../../img/linkedin.png";
-import "./contract.css";
+import "./contact.css";
 
 const Contract = () => {
     const formRef = useRef();

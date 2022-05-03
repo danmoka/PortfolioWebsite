@@ -83,6 +83,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    border: none;
+    border-right: 20px solid #700917;
 }
 
 .i-scroll {

@@ -4,10 +4,12 @@
 }
 
 .c-bg {
-    width: 20px;
+    width: 15px;
     height: 100%;
     background-color: #b00d23;
     position: absolute;
+    border: none;
+    border-left: 5px solid #700917;
 }
 
 .c-wrapper {
@@ -69,10 +71,12 @@ textarea {
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    resize: none;
 }
 
 button {
     border: none;
+    border-bottom: 3px solid #700917;
     padding: 15px;
     background-color: #b00d23;
     color: white;
