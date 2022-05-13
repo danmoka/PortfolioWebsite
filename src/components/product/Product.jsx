@@ -1,4 +1,4 @@
-import "./product.css" 
+import "./product.css";
 
 const Product = ({ src }) => {
     return (
@@ -12,7 +12,7 @@ const Product = ({ src }) => {
                 <img src={src} alt="" className="p-img" />
             </a>
         </div>
-    )
-}
+    );
+};
 
-export default Product
+export default Product;

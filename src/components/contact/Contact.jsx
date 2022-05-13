@@ -1,9 +1,7 @@
 import { useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
-import { contactInfo } from "../../data";
-import Email from "../../img/email.png";
-import Phone from "../../img/phone.png";
-import LinkedIn from "../../img/linkedin.png";
+import emailjs from "@emailjs/browser";
+import { contactInfo } from "../../utils/data";
+import images from "../../utils/images";
 import "./contact.css";
 
 const Contract = () => {
@@ -42,7 +40,7 @@ const Contract = () => {
                     <div className="c-info">
                         <div className="c-info-item">
                             <img
-                                src={LinkedIn}
+                                src={images.linkedIn}
                                 alt=""
                                 className="c-info-icon"
                             />
@@ -57,7 +55,7 @@ const Contract = () => {
                         </div>
                         <div className="c-info-item">
                             <img
-                                src={Phone}
+                                src={images.phone}
                                 alt=""
                                 className="c-info-icon"
                             />
@@ -65,7 +63,7 @@ const Contract = () => {
                         </div>
                         <div className="c-info-item">
                             <img
-                                src={Email}
+                                src={images.email}
                                 alt=""
                                 className="c-info-icon"
                             />

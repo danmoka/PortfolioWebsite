@@ -1,6 +1,6 @@
-import Product from "../product/Product"
-import { products } from "../../data"
-import "./productList.css"
+import Product from "../product/Product";
+import { products } from "../../utils/data";
+import "./productList.css";
 
 const ProductList = () => {
     return (
@@ -21,7 +21,7 @@ const ProductList = () => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProductList
+export default ProductList;

@@ -1,8 +1,4 @@
-import Instagram from "../../img/instagram.png";
-import LinkedIn from "../../img/linkedin.png";
-import Facebook from "../../img/facebook.png";
-import VK from "../../img/vk.png";
-import Email from "../../img/email.png";
+import images from "../../utils/images";
 import "./footer.css";
 
 const Footer = () => {
@@ -36,7 +32,7 @@ const Footer = () => {
                     >
                         <img
                             className="f-image"
-                            src={Instagram}
+                            src={images.instagram}
                             alt="" 
                         />
                     </a>
@@ -47,7 +43,7 @@ const Footer = () => {
                     >
                         <img
                             className="f-image"
-                            src={Facebook}
+                            src={images.facebook}
                             alt="" 
                         />
                     </a>
@@ -58,7 +54,7 @@ const Footer = () => {
                     >
                         <img
                             className="f-image"
-                            src={LinkedIn}
+                            src={images.linkedIn}
                             alt=""
                         />
                     </a>
@@ -69,7 +65,7 @@ const Footer = () => {
                     >
                         <img
                             className="f-image"
-                            src={VK}
+                            src={images.vk}
                             alt="" 
                         />
                     </a>
@@ -78,7 +74,7 @@ const Footer = () => {
                     >
                         <img
                             className="f-image"
-                            src={Email}
+                            src={images.email}
                             alt=""
                         />
                     </a>

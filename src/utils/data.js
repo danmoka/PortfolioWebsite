@@ -1,19 +1,17 @@
-import Mathevent from "./img/products/mathevent-common.png"
-import QGISPlugin from "./img/products/qgis-plugin.png"
-import TeamsPowerBI from "./img/products/teams-powerbi.png"
+import images from "./images";
 
 export const products = [
     {
         id: 1,
-        src: Mathevent,
+        src: images.mathevent,
       },
       {
         id: 2,
-        src: QGISPlugin,
+        src: images.qGISPlugin,
       },
       {
         id: 3,
-        src: TeamsPowerBI,
+        src: images.teamsPowerBI,
       },
 ];
 

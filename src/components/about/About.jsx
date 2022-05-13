@@ -1,5 +1,5 @@
-import Award from "../../img/award.png"
-import "./about.css"
+import images from "../../utils/images";
+import "./about.css";
 
 const About = () => {
     return (
@@ -25,7 +25,7 @@ const About = () => {
                     Et enim reprehenderit At fuga necessitatibus qui quia iure eum veritatis autem non cumque illo rem earum minima.
                 </p>
                 <div className="a-award">
-                    <img src={Award} alt="" className="a-award-img"/>
+                    <img src={images.award} alt="" className="a-award-img"/>
                     <div className="a-award-texts">
                         <h4 className="a-award-title">Lorem ipsum dolor sit amet awards 2021</h4>
                         <p className="a-award-desc">
@@ -37,7 +37,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default About
+export default About;

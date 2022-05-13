@@ -1,6 +1,6 @@
-import Me from "../../img/me-unDraw2.svg"
-import MouseSvg from "../common/MouseSvg"
-import "./intro.css"
+import MouseSvg from "../common/MouseSvg";
+import images from "../../utils/images";
+import "./intro.css";
 
 const Intro = () => {
     return (
@@ -28,11 +28,11 @@ const Intro = () => {
             <div className="i-right">
                 <div className="i-bg"></div>
                 <div className="i-img-wrapper">
-                    <img src={Me} alt="" className="i-img"/>
+                    <img src={images.me} alt="" className="i-img"/>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Intro
+export default Intro;
