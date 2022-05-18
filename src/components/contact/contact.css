@@ -9,7 +9,6 @@
     background-color: #b00d23;
     position: absolute;
     border: none;
-    border-left: 5px solid #700917;
 }
 
 .c-wrapper {
@@ -66,17 +65,29 @@ input {
     padding-left: 10px;
 }
 
+input.dark {
+    background-color: #444;
+    color: whitesmoke;
+    border-bottom: none;
+}
+
 textarea {
     width: 100%;
     margin: 10px 0px;
+    border: 1px solid black;
     font-size: 14px;
     padding-left: 10px;
     resize: none;
 }
 
+textarea.dark {
+    background-color: #444;
+    color: whitesmoke;
+    border: none;
+}
+
 button {
     border: none;
-    border-bottom: 3px solid #700917;
     padding: 15px;
     background-color: #b00d23;
     color: white;

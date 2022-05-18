@@ -1,8 +1,12 @@
-import MouseSvg from "../common/MouseSvg";
+import { useContext } from "react";
+import { ThemeContext } from "../../store/context";
 import images from "../../utils/images";
 import "./intro.css";
 
 const Intro = () => {
+    const theme = useContext(ThemeContext);
+    const isDarkMode = theme.state.isDarkMode;
+
     return (
         <div className="i">
             <div className="i-left">
@@ -23,12 +27,16 @@ const Intro = () => {
                         Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
                     </p>
                 </div>
-                <MouseSvg className="i-scroll"/>
+                <img 
+                    className="i-scroll"
+                    src={images.down}
+                    alt=""
+                />
             </div>
             <div className="i-right">
                 <div className="i-bg"></div>
                 <div className="i-img-wrapper">
-                    <img src={images.me} alt="" className="i-img"/>
+                    <img src={ isDarkMode ? images.meDark : images.me } alt="" className="i-img"/>
                 </div>
             </div>
         </div>

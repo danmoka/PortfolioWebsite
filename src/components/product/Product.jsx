@@ -1,12 +1,12 @@
 import "./product.css";
 
-const Product = ({ src }) => {
+const Product = ({ src, isDarkMode }) => {
     return (
-        <div className="p">
-            <div className="p-browser">
-                <div className="p-circle"></div>
-                <div className="p-circle"></div>
-                <div className="p-circle"></div>
+        <div className={isDarkMode ? "p dark" : "p light"}>
+            <div className={isDarkMode ? "p-browser dark" : "p-browser light"}>
+                <div className={isDarkMode ? "p-circle dark" : "p-circle light"}></div>
+                <div className={isDarkMode ? "p-circle dark" : "p-circle light"}></div>
+                <div className={isDarkMode ? "p-circle dark" : "p-circle light"}></div>
             </div>
             <a href={src} target="_blank" rel="noreferrer">
                 <img src={src} alt="" className="p-img" />

@@ -84,7 +84,6 @@
     top: 0;
     right: 0;
     border: none;
-    border-right: 20px solid #700917;
 }
 
 .i-scroll {
@@ -92,13 +91,17 @@
     height: 35px;
     position: absolute;
     bottom: 20px;
-    transition: all 0.3s ease;
+    animation: move-scroll 2s ease-in-out infinite alternate;
 }
 
-/* hover animation */
-.i-scroll:hover {
-    height: 40px;
-    width: 40px;
+/* animation */
+@keyframes move-scroll {
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(-0px);
+    }
 }
 
 .i-img-wrapper {

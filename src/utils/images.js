@@ -9,7 +9,11 @@ const images = {
     mathevent: "png/mathevent-common.png",
     qGISPlugin: "png/qgis-plugin.png",
     teamsPowerBI: "png/teams-powerbi.png",
+    sun: "png/sun.png",
+    moon: "png/moon.png",
+    down: "png/down-chevron.png",
     me: "svg/me-unDraw2.svg",
+    meDark: "svg/me-unDraw-dark.svg",
 }
 
 export default images;

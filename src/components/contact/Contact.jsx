@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../../store/context";
 import { contactInfo } from "../../utils/data";
 import images from "../../utils/images";
 import "./contact.css";
@@ -9,6 +11,9 @@ const Contract = () => {
     const [done, setDone] = useState(null);
     const [doneMessage, setDoneMessage] = useState("Something went wrong :(");
     const [additionalInfo, setAdditionalInfo] = useState("");
+
+    const theme = useContext(ThemeContext);
+    const isDarkMode = theme.state.isDarkMode;
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -80,10 +85,26 @@ const Contract = () => {
                                 Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
                             </p>
                             <form ref={formRef} onSubmit={handleSubmit}>
-                                <input type="text" placeholder="Name" name="user_name" />
-                                <input type="text" placeholder="Subject" name="user_subject" />
-                                <input type="text" placeholder="Email" name="user_email" />
-                                <textarea rows="5" placeholer="Message" name="message"/>
+                                <input
+                                    className={isDarkMode && "input dark"}
+                                    type="text" 
+                                    placeholder="Name" 
+                                    name="user_name" />
+                                <input
+                                    className={isDarkMode && "input dark"}
+                                    type="text" 
+                                    placeholder="Subject" 
+                                    name="user_subject" />
+                                <input
+                                    className={isDarkMode && "input dark"}
+                                    type="text" 
+                                    placeholder="Email" 
+                                    name="user_email" />
+                                <textarea
+                                    className={isDarkMode && "textarea dark"}
+                                    rows="5" 
+                                    placeholer="Message" 
+                                    name="message"/>
                                 <button>Submit</button>
                             </form>
                         </div>

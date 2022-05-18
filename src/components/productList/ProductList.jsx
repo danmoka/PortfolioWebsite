@@ -1,8 +1,13 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../store/context";
 import Product from "../product/Product";
 import { products } from "../../utils/data";
 import "./productList.css";
 
 const ProductList = () => {
+    const theme = useContext(ThemeContext);
+    const isDarkMode = theme.state.isDarkMode;
+
     return (
         <div className="pl">
             <div className="pl-texts">
@@ -17,7 +22,7 @@ const ProductList = () => {
             </div>
             <div className="pl-list">
                 {products.map((item) => (
-                    <Product key={item.id} src={item.src} isGif={item.isGif} />
+                    <Product key={item.id} src={item.src} isDarkMode={isDarkMode} />
                 ))}
             </div>
         </div>
