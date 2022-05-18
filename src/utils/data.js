@@ -68,6 +68,10 @@ export const products = [
         id: 2,
         src: images.product2,
       },
+      {
+        id: 3,
+        src: images.product3,
+      },
 ];
 
 export const contactLinkedIn = {
