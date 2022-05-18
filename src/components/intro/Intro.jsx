@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../store/context";
+import { introDescription, introName, introSkills } from "../../utils/data";
 import images from "../../utils/images";
 import "./intro.css";
 
@@ -12,20 +13,17 @@ const Intro = () => {
             <div className="i-left">
                 <div className="i-left-wrapper">
                     <h2 className="i-intro">Hello, my name is</h2>
-                    <h1 className="i-name">Daniil Potemkin</h1>
+                    <h1 className="i-name">{introName}</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web developer</div>
-                            <div className="i-title-item">Backend developer</div>
-                            <div className="i-title-item">Cybersecurity specialist</div>
-                            <div className="i-title-item">Traveler</div>
-                            <div className="i-title-item">Photographer</div>
+                            {
+                                introSkills.map(({id, text}) => (
+                                    <div className="i-title-item" key={id}>{text}</div>
+                                ))
+                            }
                         </div>
                     </div>
-                    <p className="i-desc">
-                        Lorem ipsum dolor sit amet. 
-                        Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
-                    </p>
+                    <p className="i-desc">{introDescription}</p>
                 </div>
                 <img 
                     className="i-scroll"

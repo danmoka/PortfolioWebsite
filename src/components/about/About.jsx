@@ -1,3 +1,4 @@
+import { aboutDesc, aboutImg, aboutSub, awardDescription, awardName } from "../../utils/data";
 import images from "../../utils/images";
 import "./about.css";
 
@@ -8,31 +9,20 @@ const About = () => {
                 <div className="a-card bg"></div>
                 <div className="a-card">
                     <img 
-                        src="https://images.pexels.com/photos/6720295/pexels-photo-6720295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                        src={aboutImg} 
                         alt="" 
                         className="a-card-img"/>
                 </div>
             </div>
             <div className="a-right">
                 <h1 className="a-title">About me</h1>
-                <p className="a-sub">
-                    Lorem ipsum dolor sit amet. 
-                    Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
-                </p>
-                <p className="a-desc">
-                    Lorem ipsum dolor sit amet. 
-                    Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur. 
-                    Et enim reprehenderit At fuga necessitatibus qui quia iure eum veritatis autem non cumque illo rem earum minima.
-                </p>
+                <p className="a-sub">{aboutSub}</p>
+                <p className="a-desc">{aboutDesc}</p>
                 <div className="a-award">
                     <img src={images.award} alt="" className="a-award-img"/>
                     <div className="a-award-texts">
-                        <h4 className="a-award-title">Lorem ipsum dolor sit amet awards 2021</h4>
-                        <p className="a-award-desc">
-                        Lorem ipsum dolor sit amet. 
-                        Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur. 
-                        Et enim reprehenderit At fuga necessitatibus qui quia iure eum veritatis autem non cumque illo rem earum minima.
-                        </p>
+                        <h4 className="a-award-title">{awardName}</h4>
+                        <p className="a-award-desc">{awardDescription}</p>
                     </div>
                 </div>
             </div>

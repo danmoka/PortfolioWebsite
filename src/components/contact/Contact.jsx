@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../store/context";
-import { contactInfo } from "../../utils/data";
+import { contactAdditionalInfo, contactEmail, contactInfo, contactLinkedIn, contactPhone } from "../../utils/data";
 import images from "../../utils/images";
 import "./contact.css";
 
@@ -51,11 +51,11 @@ const Contact = () => {
                             />
                             LinkedIn:  
                             <a
-                                href="https://www.linkedin.com/in/daniil-potemkin-a5867a215"
+                                href={contactLinkedIn.link}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Daniil Potemkin
+                                {contactLinkedIn.name}
                             </a>
                         </div>
                         <div className="c-info-item">
@@ -64,7 +64,7 @@ const Contact = () => {
                                 alt=""
                                 className="c-info-icon"
                             />
-                            (999)-911-11-11
+                            {contactPhone}
                         </div>
                         <div className="c-info-item">
                             <img
@@ -72,7 +72,7 @@ const Contact = () => {
                                 alt=""
                                 className="c-info-icon"
                             />
-                            mymail@mail.com
+                            {contactEmail}
                         </div>
                     </div>
                 </div>
@@ -82,9 +82,7 @@ const Contact = () => {
                         <>
                             <div className="c-desc">
                                 <b>Feel free to write to me</b>
-                                <p>
-                                    Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
-                                </p>
+                                <p>{contactAdditionalInfo}</p>
                             </div>
                             <form ref={formRef} onSubmit={handleSubmit}>
                                 <input

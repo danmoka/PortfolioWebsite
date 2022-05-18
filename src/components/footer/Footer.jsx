@@ -1,4 +1,4 @@
-import images from "../../utils/images";
+import { socialMedia } from "../../utils/data";
 import "./footer.css";
 
 const Footer = () => {
@@ -25,59 +25,22 @@ const Footer = () => {
             </div>
             <div className="f-right">
                 <div className="f-right-wrapper">
-                    <a
-                        href="https://www.instagram.com/danmoka"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            className="f-image"
-                            src={images.instagram}
-                            alt="" 
-                        />
-                    </a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100005452275352"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            className="f-image"
-                            src={images.facebook}
-                            alt="" 
-                        />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/daniil-potemkin-a5867a215"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            className="f-image"
-                            src={images.linkedIn}
-                            alt=""
-                        />
-                    </a>
-                    <a
-                        href="https://vk.com/potemaa"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            className="f-image"
-                            src={images.vk}
-                            alt="" 
-                        />
-                    </a>
-                    <a
-                        href="mailto: homount.accome@gmail.com"
-                    >
-                        <img
-                            className="f-image"
-                            src={images.email}
-                            alt=""
-                        />
-                    </a>
+                    {
+                        socialMedia.map(({ id, href, imgSrc}) => (
+                            <a
+                                href={href}
+                                target="_blank"
+                                rel="noreferrer"
+                                key={id}
+                            >
+                                <img
+                                    className="f-image"
+                                    src={imgSrc}
+                                    alt="" 
+                                />
+                            </a>
+                        ))
+                    }
                 </div>
             </div>
         </div>
