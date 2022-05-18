@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "./store/context";
 import About from "./components/about/About";
-import Contract from "./components/contact/Contact";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
@@ -18,7 +18,7 @@ const App = () => {
       <Intro />
       <About />
       <ProductList />
-      <Contract />
+      <Contact />
       <Footer />
     </div>
   );

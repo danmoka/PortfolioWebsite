@@ -6,7 +6,7 @@ import { contactInfo } from "../../utils/data";
 import images from "../../utils/images";
 import "./contact.css";
 
-const Contract = () => {
+const Contact = () => {
     const formRef = useRef();
     const [done, setDone] = useState(null);
     const [doneMessage, setDoneMessage] = useState("Something went wrong :(");
@@ -49,7 +49,7 @@ const Contract = () => {
                                 alt=""
                                 className="c-info-icon"
                             />
-                            This is my LinkedIn profile:  
+                            LinkedIn:  
                             <a
                                 href="https://www.linkedin.com/in/daniil-potemkin-a5867a215"
                                 target="_blank"
@@ -79,11 +79,13 @@ const Contract = () => {
                 <div className="c-right">
                     { done === null 
                     ? (
-                        <div className="c-desc">
-                            <b>Feel free to write to me</b>
-                            <p>
-                                Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
-                            </p>
+                        <>
+                            <div className="c-desc">
+                                <b>Feel free to write to me</b>
+                                <p>
+                                    Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur.
+                                </p>
+                            </div>
                             <form ref={formRef} onSubmit={handleSubmit}>
                                 <input
                                     className={isDarkMode && "input dark"}
@@ -107,7 +109,7 @@ const Contract = () => {
                                     name="message"/>
                                 <button>Submit</button>
                             </form>
-                        </div>
+                        </>
                     )
                     : (
                         <div className="c-message">
@@ -121,4 +123,4 @@ const Contract = () => {
     );
 };
 
-export default Contract;
+export default Contact;

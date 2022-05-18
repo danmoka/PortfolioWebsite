@@ -46,3 +46,29 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 480px) {
+    .f {
+        flex-direction: column;
+        padding: 20px;
+        height: 20vh;
+    }
+
+    .f-left-wrapper {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f-right-wrapper {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f-image {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+}
