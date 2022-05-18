@@ -86,10 +86,11 @@ export const contactEmail = "mymail@mail.com"
 export const contactAdditionalInfo = "Et illo exercitationem ad saepe natus ea Quis culpa a amet tenetur ut aliquid totam quo excepturi sint quo aliquid tenetur."
 
 export const contactInfo = {
-  serviceId: "service_68bjjhh",
-  templateId: "template_25b1rkg",
-  publicKey: "akPLKdzFg3kqIvfXA",
+  serviceId: "",
+  templateId: "",
+  publicKey: "",
 };
+
 export const socialMedia = [
   {
     id: 1,
