@@ -25,11 +25,13 @@ const Intro = () => {
                     </div>
                     <p className="i-desc">{introDescription}</p>
                 </div>
-                <img 
-                    className="i-scroll"
-                    src={images.down}
-                    alt=""
-                />
+                <a href="#about" className="i-scroll">
+                    <img 
+                        className="i-scroll-icon"
+                        src={images.down}
+                        alt=""
+                    />
+                </a>
             </div>
             <div className="i-right">
                 <div className="i-bg"></div>

@@ -87,11 +87,14 @@
 }
 
 .i-scroll {
-    width: 35px;
-    height: 35px;
     position: absolute;
     bottom: 20px;
     animation: move-scroll 2s ease-in-out infinite alternate;
+}
+
+.i-scroll-icon {
+    width: 35px;
+    height: 35px;
 }
 
 /* animation */
