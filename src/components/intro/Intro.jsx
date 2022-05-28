@@ -10,7 +10,7 @@ const Intro = () => {
             { 
                 showCursor: true,
                 backDelay: 1500,
-                strings: ['ENGINEERS', 'SOFTWARE' ] 
+                strings: ['Engineers', 'Software' ] 
             });
     }, []);
 
@@ -26,7 +26,7 @@ const Intro = () => {
                 <div className="wrapper">
                     <h2>Welcome to our</h2>
                     <h1>windmill. team</h1>
-                    <h3>GREAT <span ref={textRef}></span></h3>
+                    <h3>Great <span ref={textRef}></span></h3>
                 </div>
                 <a href="#services">
                     <img src="assets/down.png" alt=""/>
