@@ -3,6 +3,7 @@ import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Topbar from "./components/topbar/Topbar";
 import Menu from "./components/menu/Menu";
+import Services from "./components/services/Services";
 import "./app.scss";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <Services />
         <Contact />
       </div>
     </div>
