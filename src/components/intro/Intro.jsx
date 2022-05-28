@@ -25,7 +25,7 @@ const Intro = () => {
             <div className="right">
                 <div className="wrapper">
                     <h2>Welcome to our</h2>
-                    <h1>windmill. team</h1>
+                    <h1>windmill<span>.</span> team</h1>
                     <h3>Great <span ref={textRef}></span></h3>
                 </div>
                 <a href="#services">
