@@ -1,16 +1,25 @@
+import { useState } from "react";
+import { services } from "../../data/services";
+import ServiceTab from "../serviceTab/ServiceTab";
 import images from "../../utils/images";
 import "./services.scss";
 
 const Services = () => {
+    const [selected, setSelected] = useState(services[0].id);
+
     return (
         <div className="services" id="services">
             <h1>Services</h1>
             <ul>
-                <li className="active">Software Development</li>
-                <li>Mobile Development</li>
-                <li>Machine Learning</li>
-                <li>Business Analytics</li>
-                <li>Project Mgt <span>&</span> Agile Practices</li>
+                {services.map((item) => (
+                    <ServiceTab 
+                        key={item.id}
+                        id={item.id}
+                        name={item.name} 
+                        active={selected === item.id} 
+                        select={(id) => setSelected(id)}
+                    />
+                ))}
             </ul>
             <div className="container">
                 <div className="item">
