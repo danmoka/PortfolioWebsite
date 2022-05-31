@@ -1,11 +1,36 @@
-import { useState } from "react";
-import { services } from "../../data/services";
+import { useEffect, useState } from "react";
 import ServiceTab from "../serviceTab/ServiceTab";
-import images from "../../utils/images";
+import { 
+    businessAnalytics, 
+    machineLearning, 
+    mobileDevelopment, 
+    services, 
+    softwareDevelopment,
+} from "../../data/services";
 import "./services.scss";
 
 const Services = () => {
     const [selected, setSelected] = useState(services[0].id);
+    const [data, setData] =  useState([]);
+
+    useEffect(() => {
+        switch(selected) {
+            case "Software Development": 
+                setData(softwareDevelopment);
+                break;
+            case "Mobile Development": 
+                setData(mobileDevelopment);
+                break;
+            case "Machine Learning": 
+                setData(machineLearning);
+                break;
+            case "Business Analytics": 
+                setData(businessAnalytics);
+                break;
+            default:
+                setData([]);
+        }
+    }, [selected]);
 
     return (
         <div className="services" id="services">
@@ -22,18 +47,20 @@ const Services = () => {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src={images.services.chaty} alt=""/>
-                    <h3>Chaty</h3>
-                </div>
-                <div className="item">
-                    <img src={images.services.picloud} alt=""/>
-                    <h3>PiCloud</h3>
-                </div>
-                <div className="item">
-                    <img src={images.services.boxy} alt=""/>
-                    <h3>inBoxy</h3>
-                </div>
+                {
+                    data.length < 1
+                    ? <h2>Coming soon...</h2>
+                    : (
+                        <>
+                            {data.map((item) => (
+                                <div key={item.id} className="item">
+                                    <img src={item.img} alt=""/>
+                                    <h3>{item.title}</h3>
+                                </div>
+                            ))}
+                        </>
+                    )
+                }
             </div>
         </div>
     );
