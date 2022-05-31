@@ -80,17 +80,17 @@ export const machineLearning = [
 export const businessAnalytics = [
     {
         id: 1,
-        title: "Simple analytics",
+        title: "AnnaLabby",
         img: images.services.analytics
     },
     {
         id: 2,
-        title: "Segment analytics",
+        title: "Pizy eye",
         img: images.services.segments,
     },
     {
         id: 3,
-        title: "Investments",
+        title: "Cat & Dog investments",
         img: images.services.investments
     }
 ];
