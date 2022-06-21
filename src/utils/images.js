@@ -2,7 +2,11 @@ const images = {
     assets: {
         windmill: "assets/wind2.jpg",
         down: "assets/down.png",
-        arrow: "assets/arrow.png"
+        arrow: "assets/arrow.png",
+        rightArrow: "assets/right-arrow.png",
+        youtube: "assets/youtube.png",
+        twitter: "assets/twitter.png",
+        linkedIn: "assets/linkedin.png",
     },
     services: {
         chaty: "services/mobile/chat.svg",
@@ -25,6 +29,11 @@ const images = {
         trendyol: "success/trendyol.webp",
         meridian: "success/meridianIT.png",
         atea: "success/atea.jpg"
+    },
+    testimonials: {
+        firstPerson: "testimonials/person1.jpg",
+        secondPerson: "testimonials/person2.jpg",
+        thirdPerson: "testimonials/person3.jpg",
     }
 };
 

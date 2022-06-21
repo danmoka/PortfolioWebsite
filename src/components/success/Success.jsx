@@ -18,7 +18,9 @@ const Success = () => {
                 style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
             >
                 { data.map((item) => (
-                    <div className="container">
+                    <div
+                        key={item.id}
+                        className="container">
                         <div className="item">
                             <div className="left">
                                 <div className="leftContainer">

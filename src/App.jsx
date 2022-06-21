@@ -5,6 +5,7 @@ import Topbar from "./components/topbar/Topbar";
 import Menu from "./components/menu/Menu";
 import Services from "./components/services/Services";
 import Success from "./components/success/Success";
+import Testimonials from "./components/testimonials/Testimonials";
 import "./app.scss";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Intro />
         <Services />
         <Success />
+        <Testimonials />
         <Contact />
       </div>
     </div>
