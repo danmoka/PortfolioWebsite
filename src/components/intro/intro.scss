@@ -22,9 +22,9 @@
             color: $primaryTextColor;
 
             .text {
-                position: fixed;
-                bottom: 10px;
-                left: 10px;
+                position: absolute;
+                bottom: 150px;
+                left: 70px;
                 opacity: 50%;
             }
         }

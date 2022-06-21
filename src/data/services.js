@@ -38,6 +38,21 @@ export const softwareDevelopment = [
         id: 3,
         title: "iBrain",
         img: images.services.iBrain
+    },
+    {
+        id: 4,
+        title: "iBrain",
+        img: images.services.iBrain,
+    },
+    {
+        id: 5,
+        title: "inBoxy",
+        img: images.services.boxy,
+    },
+    {
+        id: 6,
+        title: "Zozo CRM",
+        img: images.services.crm,
     }
 ];
 

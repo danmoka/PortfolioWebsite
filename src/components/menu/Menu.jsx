@@ -7,6 +7,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             <ul>
                 <MenuItem href="#intro" setMenuOpen={setMenuOpen}>Home</MenuItem>
                 <MenuItem href="#services" setMenuOpen={setMenuOpen}>Services</MenuItem>
+                <MenuItem href="#success" setMenuOpen={setMenuOpen}>Success</MenuItem>
                 <MenuItem href="#contact" setMenuOpen={setMenuOpen}>Contact</MenuItem>
             </ul>
         </div>

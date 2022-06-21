@@ -2,6 +2,7 @@ const images = {
     assets: {
         windmill: "assets/wind2.jpg",
         down: "assets/down.png",
+        arrow: "assets/arrow.png"
     },
     services: {
         chaty: "services/mobile/chat.svg",
@@ -16,6 +17,14 @@ const images = {
         analytics: "services/business_analytics/analytics.svg",
         segments: "services/business_analytics/segments.svg",
         investments: "services/business_analytics/investments.svg",
+    },
+    success: {
+        successBackground: "success/success.svg",
+        successBackground2: "success/success2.svg",
+        successBackground3: "success/success3.svg",
+        trendyol: "success/trendyol.webp",
+        meridian: "success/meridianIT.png",
+        atea: "success/atea.jpg"
     }
 };
 
